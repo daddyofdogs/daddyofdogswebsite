@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Impressum - MoodWave Social Media</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background: rgba(255, 255, 255, 0.95);
+            border-radius: 20px;
+            padding: 40px;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+            backdrop-filter: blur(10px);
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 40px;
+            padding-bottom: 30px;
+            border-bottom: 3px solid #667eea;
+        }
+
+        .header h1 {
+            color: #2c3e50;
+            font-size: 3em;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .header p {
+            color: #7f8c8d;
+            font-size: 1.2em;
+            font-weight: 500;
+        }
+
+        .section {
+            margin-bottom: 30px;
+            padding: 25px;
+            background: rgba(255, 255, 255, 0.8);
+            border-radius: 15px;
+            border-left: 5px solid #667eea;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .section h2 {
+            color: #34495e;
+            margin-bottom: 20px;
+            font-size: 1.8em;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .section p {
+            color: #2c3e50;
+            margin-bottom: 12px;
+            font-size: 1.1em;
+        }
+
+        .section strong {
+            color: #2c3e50;
+            font-weight: 600;
+        }
+
+        .company-info {
+            background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+            color: white;
+            border-left: 5px solid #f5576c;
+        }
+
+        .company-info h2,
+        .company-info p,
+        .company-info strong {
+            color: white;
+        }
+
+        .contact-info {
+            background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+            color: white;
+            border-left: 5px solid #00f2fe;
+        }
+
+        .contact-info h2,
+        .contact-info p,
+        .contact-info strong {
+            color: white;
+        }
+
+        .legal-info {
+            background: linear-gradient(135deg, #43e97b 0%, #38f9d7 100%);
+            color: white;
+            border-left: 5px solid #38f9d7;
+        }
+
+        .legal-info h2,
+        .legal-info p,
+        .legal-info strong {
+            color: white;
+        }
+
+        .dispute-resolution {
+            background: linear-gradient(135deg, #fa709a 0%, #fee140 100%);
+            color: #2c3e50;
+            border-left: 5px solid #fa709a;
+        }
+
+        .dispute-resolution h2 {
+            color: #2c3e50;
+        }
+
+        .liability {
+            background: linear-gradient(135deg, #a8edea 0%, #fed6e3 100%);
+            color: #2c3e50;
+            border-left: 5px solid #a8edea;
+        }
+
+        .liability h2 {
+            color: #2c3e50;
+        }
+
+        .privacy {
+            background: linear-gradient(135deg, #d299c2 0%, #fef9d7 100%);
+            color: #2c3e50;
+            border-left: 5px solid #d299c2;
+        }
+
+        .privacy h2 {
+            color: #2c3e50;
+        }
+
+        .social-media {
+            background: linear-gradient(135deg, #89f7fe 0%, #66a6ff 100%);
+            color: white;
+            border-left: 5px solid #66a6ff;
+        }
+
+        .social-media h2,
+        .social-media p,
+        .social-media strong {
+            color: white;
+        }
+
+        .footer {
+            text-align: center;
+            margin-top: 40px;
+            padding: 25px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            border-radius: 15px;
+            color: white;
+        }
+
+        .footer p {
+            font-size: 1.1em;
+            margin-bottom: 10px;
+        }
+
+        .back-button {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 12px 25px;
+            background: rgba(255, 255, 255, 0.2);
+            color: white;
+            text-decoration: none;
+            border-radius: 25px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            border: 2px solid rgba(255, 255, 255, 0.3);
+        }
+
+        .back-button:hover {
+            background: rgba(255, 255, 255, 0.3);
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        .info-box {
+            background: linear-gradient(135deg, #ffeaa7 0%, #fab1a0 100%);
+            color: #2d3436;
+            padding: 20px;
+            border-radius: 15px;
+            margin-bottom: 30px;
+            text-align: center;
+            font-weight: 500;
+            border: 2px solid #fdcb6e;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .emoji {
+            font-size: 1.5em;
+            margin-right: 10px;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                padding: 25px;
+                margin: 10px;
+            }
+            
+            .header h1 {
+                font-size: 2.2em;
+            }
+            
+            .section {
+                padding: 20px;
+            }
+            
+            .section h2 {
+                font-size: 1.5em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>📄 Impressum</h1>
+            <p>Rechtliche Informationen zu MoodWave Social Media</p>
+        </div>
+
+        <div class="info-box">
+            <span class="emoji">⚖️</span>
+            Dieses Impressum erfüllt alle Anforderungen nach § 5 TMG und der DSGVO für deutsche Unternehmen
+        </div>
+
+        <div class="section company-info">
+            <h2><span class="emoji">🏢</span>Angaben gemäß § 5 TMG</h2>
+            <p><strong>Firmenname:</strong> MoodWave Social Media</p>
+            <p><strong>Rechtsform:</strong> Einzelunternehmen</p>
+            <p><strong>Inhaber:</strong> [Ihr vollständiger Name]</p>
+            <p><strong>Anschrift:</strong><br>
+            [Straße und Hausnummer]<br>
+            [Postleitzahl] [Stadt]<br>
+            Deutschland</p>
+        </div>
+
+        <div class="section contact-info">
+            <h2><span class="emoji">📞</span>Kontakt</h2>
+            <p><strong>Telefon:</strong> [Ihre Telefonnummer]</p>
+            <p><strong>E-Mail:</strong> [Ihre E-Mail-Adresse]</p>
+            <p><strong>Website:</strong> [Ihre Website-URL]</p>
+            <p><strong>Geschäftszeiten:</strong> Montag - Freitag, 9:00 - 18:00 Uhr</p>
+        </div>
+
+        <div class="section legal-info">
+            <h2><span class="emoji">📋</span>Steuerliche Angaben</h2>
+            <p><strong>Umsatzsteuer-Identifikationsnummer:</strong> [Falls vorhanden: DE123456789]</p>
+            <p><strong>Steuernummer:</strong> [Ihre Steuernummer]</p>
+            <p><strong>Zuständiges Finanzamt:</strong> [Name des zuständigen Finanzamtes]</p>
+            <p><strong>Berufsbezeichnung:</strong> Social Media Manager / Marketing-Dienstleister</p>
+            <p><strong>Berufsrechtliche Regelungen:</strong> Keine besonderen berufsrechtlichen Regelungen</p>
+        </div>
+
+        <div class="section dispute-resolution">
+            <h2><span class="emoji">🌐</span>EU-Streitschlichtung</h2>
+            <p>Die Europäische Kommission stellt eine Plattform zur Online-Streitbeilegung (OS) bereit:</p>
+            <p><strong>Link:</strong> https://ec.europa.eu/consumers/odr/</p>
+            <p><strong>Unsere E-Mail-Adresse:</strong> [Ihre E-Mail-Adresse]</p>
+            <p><strong>Hinweis:</strong> Wir sind nicht bereit oder verpflichtet, an Streitbeilegungsverfahren vor einer Verbraucherschlichtungsstelle teilzunehmen.</p>
+        </div>
+
+        <div class="section liability">
+            <h2><span class="emoji">⚖️</span>Haftung für Inhalte</h2>
+            <p><strong>Eigene Inhalte:</strong> Als Diensteanbieter sind wir gemäß § 7 Abs.1 TMG für eigene Inhalte auf diesen Seiten nach den allgemeinen Gesetzen verantwortlich. Nach §§ 8 bis 10 TMG sind wir als Diensteanbieter jedoch nicht unter der Verpflichtung, übermittelte oder gespeicherte fremde Informationen zu überwachen oder nach Umständen zu forschen, die auf eine rechtswidrige Tätigkeit hinweisen.</p>
+            
+            <p><strong>Externe Links:</strong> Unser Angebot enthält Links zu externen Websites Dritter, auf deren Inhalte wir keinen Einfluss haben. Deshalb können wir für diese fremden Inhalte auch keine Gewähr übernehmen. Für die Inhalte der verlinkten Seiten ist stets der jeweilige Anbieter oder Betreiber der Seiten verantwortlich.</p>
+            
+            <p><strong>Urheberrecht:</strong> Die durch die Seitenbetreiber erstellten Inhalte und Werke auf diesen Seiten unterliegen dem deutschen Urheberrecht. Die Vervielfältigung, Bearbeitung, Verbreitung und jede Art der Verwertung außerhalb der Grenzen des Urheberrechtes bedürfen der schriftlichen Zustimmung des jeweiligen Autors bzw. Erstellers.</p>
+        </div>
+
+        <div class="section privacy">
+            <h2><span class="emoji">🔒</span>Datenschutz</h2>
+            <p><strong>Datenschutzbeauftragter:</strong> Der Betreiber dieser Website</p>
+            <p><strong>Datenverarbeitung:</strong> Die Nutzung unserer Website ist in der Regel ohne Angabe personenbezogener Daten möglich. Soweit auf unseren Seiten personenbezogene Daten erhoben werden, erfolgt dies stets auf freiwilliger Basis.</p>
+            <p><strong>Detaillierte Informationen:</strong> Ausführliche Informationen zum Umgang mit Ihren Daten finden Sie in unserer separaten Datenschutzerklärung.</p>
+        </div>
+
+        <div class="section social-media">
+            <h2><span class="emoji">📱</span>Social Media Disclaimer</h2>
+            <p><strong>Plattform-Verantwortung:</strong> Wir betreiben Profile auf verschiedenen Social-Media-Plattformen (Instagram, TikTok, Facebook, etc.). Für die Datenverarbeitung auf diesen Plattformen sind die jeweiligen Betreiber verantwortlich.</p>
+            <p><strong>Moderation:</strong> Kommentare und Beiträge auf unseren Social-Media-Kanälen werden moderiert. Beiträge, die gegen geltendes Recht verstoßen, beleidigend oder unangemessen sind, werden entfernt.</p>
+            <p><strong>Keine Gewähr:</strong> Wir übernehmen keine Haftung für Inhalte, die von Dritten auf unseren Social-Media-Profilen veröffentlicht werden.</p>
+        </div>
+
+        <div class="footer">
+            <p><strong>Letzte Aktualisierung:</strong> Juli 2025</p>
+            <p>Dieses Impressum ist stets aktuell und entspricht den geltenden deutschen Gesetzen.</p>
+            <p>Bei Fragen zu diesem Impressum wenden Sie sich gerne an uns!</p>
+            <a href="index.html" class="back-button">🔙 Zurück zur Hauptseite</a>
+        </div>
+    </div>
+</body>
+</html>
